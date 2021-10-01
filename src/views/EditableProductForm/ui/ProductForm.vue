@@ -105,7 +105,7 @@ export default Vue.extend({
 	},
 	watch: {
 		product(v: Product) {
-			this.title = v.title;
+			this.title = v.name;
 			this.description = v.description;
 			this.count = v.count;
 			this.price = v.price;
