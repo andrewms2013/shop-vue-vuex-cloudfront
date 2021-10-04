@@ -65,7 +65,7 @@ const uploadFileBy = async (url: string, file: File) => {
 	console.info('Uploading to: ', destUrl.data);
 
 	// save
-	const result = await fetch(destUrl.data, {
+	const result = await fetch(destUrl.data.signedURL, {
 		method: 'PUT',
 		body: file,
 	});
